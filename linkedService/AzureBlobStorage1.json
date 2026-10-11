@@ -1,12 +1,16 @@
 {
 	"name": "AzureBlobStorage1",
-	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"annotations": [],
 		"type": "AzureBlobStorage",
 		"typeProperties": {
-			"connectionString": "DefaultEndpointsProtocol=https;AccountName=blobstoragelearning;EndpointSuffix=core.windows.net;",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDJDQzEwMUJELUUzQzUtNDNENC1BMjIwLURBNEU5NjE4NTgyNV82MDA2NjQ4ZC1mMjgyLTQ2YjItYjE5YS0wMzY2YWM5MjE0ZTYiDQp9"
+			"serviceEndpoint": "https://blobstoragelearning.blob.core.windows.net/",
+			"accountKind": "StorageV2",
+			"credential": {
+				"referenceName": "adftest",
+				"type": "CredentialReference"
+			}
 		}
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/linkedservices"
 }
