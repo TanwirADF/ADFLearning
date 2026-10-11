@@ -5,7 +5,7 @@
 		"type": "AzureSqlDatabase",
 		"typeProperties": {
 			"server": "sqldevdbserver.database.windows.net",
-			"database": "AdventureWorks",
+			"database": "AdventureWorks2022",
 			"encrypt": "mandatory",
 			"trustServerCertificate": true,
 			"authenticationType": "UserAssignedManagedIdentity",
